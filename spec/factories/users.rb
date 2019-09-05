@@ -1,7 +1,7 @@
-    FactoryBot.define do
+FactoryBot.define do
     factory :user do
       name { Faker::Name.first_name }
       email { "#{name}@#{Faker::Internet.unique.domain_name}" }
-      password_digest {'password'}
+      encrypted_password {'password'}
     end
   end
