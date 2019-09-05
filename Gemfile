@@ -37,8 +37,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 # This "acts_as" extension provides the capabilities for sorting and reordering a number of objects in a list
 gem 'acts_as_list', '~> 0.9.19'
 
-# generates fake data
-gem 'faker', '~> 2.2', '>= 2.2.1'
+
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
@@ -52,6 +51,12 @@ group :development, :test do
 
   # Factory Bot
   gem 'factory_bot_rails', '~> 5.0', '>= 5.0.2'
+
+  # generates fake data
+  gem 'faker', '~> 2.2', '>= 2.2.1'
+
+  # Simple one-liner tests for common Rails functionality
+  gem 'shoulda-matchers', '~> 4.1', '>= 4.1.2'
 
 end
 
